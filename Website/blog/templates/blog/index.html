@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Read and Relax Pro</title>
+        <!-- Favicon-->
+<!--        <link rel="icon" type="image/x-icon" href="{% static 'blog/assets/favicon.ico' %}" />-->
+                <link rel="icon" type="image/x-icon" href="{% static 'blog/assets/RelaxPro.v1.png' %}" />
+
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'blog/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+<!--        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">-->
+<!--            <div class="container">-->
+<!--&lt;!&ndash;                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>&ndash;&gt;-->
+<!--                                <a class="navbar-brand" href="#page-top">Read & Relax</a>-->
+
+<!--                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--                    Menu-->
+<!--                    <i class="fas fa-bars ms-1"></i>-->
+<!--                </button>-->
+<!--                <div class="collapse navbar-collapse" id="navbarResponsive">-->
+<!--                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">-->
+<!--                        <li class="nav-item"><a class="nav-link" href="#portfolio">Go_To_Tips</a></li>-->
+<!--                        <li class="nav-item"><a class="nav-link" href="{% url 'shop' %}">Shop</a>-->
+<!--&lt;!&ndash;                            <ul class="navbar-nav dropdown-menu">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <li class="nav-item"><a class="nav-link" href="#services">Sports Material</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <li class="nav-item"><a class="nav-link" href="#services">Sleep</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <ul class="dropdown-menu dropdown-menu-right text-right">&ndash;&gt;-->
+<!--                            -->
+<!--&lt;!&ndash;                            <ul style="float: left;line-height:50px;height:50px;border: 1px solid #fff;position:relative; display:none;">&ndash;&gt;-->
+<!--&lt;!&ndash;-->
+<!--                                    <ul style="display:none;">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <li class="nav-item" style=" display:block;"><a class="links-hidden" href="#">sleep</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <li class="nav-item"><a class="links-hidden" href="#">sports</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <li class="nav-item"><a class="links-hidden" href="#">Self care</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </ul>&ndash;&gt;-->
+
+<!--                        </li>-->
+<!--                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>-->
+<!--                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>-->
+<!--                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>-->
+
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </nav>-->
+
+
+<div >
+    {% include 'blog/navbar.html' %}
+</div>
+
+
+
+
+
+
+            {% block banner_slider %} {% endblock banner_slider %}
+
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Welcome To Read & Relax!</div>
+                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Tell Me More</a>
+            </div>
+        </header>
+<!--        &lt;!&ndash; Services&ndash;&gt;-->
+<!--        <section class="page-section" id="services">-->
+<!--            <div class="container">-->
+<!--                <div class="text-center">-->
+<!--                    <h2 class="section-heading text-uppercase">Services</h2>-->
+<!--                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+<!--                </div>-->
+<!--                <div class="row text-center">-->
+<!--                    <div class="col-md-4">-->
+<!--                        <span class="fa-stack fa-4x">-->
+<!--                            <i class="fas fa-circle fa-stack-2x text-primary"></i>-->
+<!--                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>-->
+<!--                        </span>-->
+<!--                        <h4 class="my-3">E-Commerce</h4>-->
+<!--                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                        <span class="fa-stack fa-4x">-->
+<!--                            <i class="fas fa-circle fa-stack-2x text-primary"></i>-->
+<!--                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>-->
+<!--                        </span>-->
+<!--                        <h4 class="my-3">Responsive Design</h4>-->
+<!--                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                        <span class="fa-stack fa-4x">-->
+<!--                            <i class="fas fa-circle fa-stack-2x text-primary"></i>-->
+<!--                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>-->
+<!--                        </span>-->
+<!--                        <h4 class="my-3">Web Security</h4>-->
+<!--                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Go To Tips</h2>
+                    <h3 class="section-subheading text-muted">Tips To Remove Stress From Life. </h3>
+                    <h3 class="section-subheading text-muted">Click on image to know more </h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                 <img class="img-fluid" src="{% static 'blog/assets/img/portfolio/breath1.jpg' %}" alt="..." />
+<!--                                <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />-->
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Deep Breath</div>
+                                <div class="portfolio-caption-subheading text-muted">Deep breaths lowers heart rate</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                               <img class="img-fluid" src="{% static 'blog/assets/img/portfolio/family1.jpg' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Family And Friends</div>
+                                <div class="portfolio-caption-subheading text-muted">Spend time with friends and family.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'blog/assets/img/portfolio/happyGirl.jpg' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Be Happy</div>
+                                <div class="portfolio-caption-subheading text-muted">Everything will be fine don't worry :)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'blog/assets/img/portfolio/music.jpg' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Music</div>
+                                <div class="portfolio-caption-subheading text-muted">Soothing music will help we relax</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                               <img class="img-fluid" src="{% static 'blog/assets/img/portfolio/sleep.jpg' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Sleep Well</div>
+                                <div class="portfolio-caption-subheading text-muted">Go to bed early and sleep for 6-8 hours </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'blog/assets/img/portfolio/nature.jpg' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Explore Nature</div>
+                                <div class="portfolio-caption-subheading text-muted">Go for a walk; Explore nature</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 7-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal7">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'blog/assets/img/portfolio/coffee.jpg' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Have some coffee</div>
+                                <div class="portfolio-caption-subheading text-muted">Drink coffee or food you like.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+
+                        <!-- Portfolio item 8-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal8">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'blog/assets/img/portfolio/Exercise.jpg' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Exercise</div>
+                                <div class="portfolio-caption-subheading text-muted">Everything will be fine don't worry :)</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-sm-6 mb-4 ">
+                                     <!-- Portfolio item 9-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal9">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'blog/assets/img/portfolio/Meditate.jpg' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Meditate</div>
+                                <div class="portfolio-caption-subheading text-muted">Meditation will help in long run</div>
+                            </div>
+                        </div>
+                    </div>
+
+              <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 10-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal10">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'blog/assets/img/portfolio/Gratitude.jpg' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Express Gratitude</div>
+                                <div class="portfolio-caption-subheading text-muted">Be grateful for everything you have</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                   <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 11-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal11">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'blog/assets/img/portfolio/hobby.jpg' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Hobby</div>
+                                <div class="portfolio-caption-subheading text-muted">Follow your passion.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 12-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal12">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'blog/assets/img/portfolio/fun1.png' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">A Good laugh</div>
+                                <div class="portfolio-caption-subheading text-muted">Chill and have fun</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About</h2>
+                    <h3 class="section-subheading text-muted">Read & Relax</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'blog/assets/img/about/1.jpg' %}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+<!--                                <h4>2009-2011</h4>-->
+                                <h4 class="subheading">Hello!</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Welcome to Read & Relax , a resource trying to provide information which makes you feel relaxed.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'blog/assets/img/about/2.jpg' %}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+<!--                                <h4>August 2021</h4>-->
+                                <h4 class="subheading">Born</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Read & Relax was founded by Diksha in August 2021.</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'blog/assets/img/about/3.jpg' %}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+<!--                                <h4>December 2015</h4>-->
+                                <h4 class="subheading">What you can do</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Stay Calm ! <br>Consider following me on social media for more updates.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'blog/assets/img/about/4.jpg' %}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+<!--                                <h4>July 2020</h4>-->
+                                <h4 class="subheading">Disclaimer</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Our Website content is for information purpose only. Read & Relax does not provide medical advice,diagnosis or treatment.</p></div>
+                        </div>
+                    </li>
+<!--                    <li class="timeline-inverted">-->
+<!--                        <div class="timeline-image">-->
+<!--                            <h4>-->
+<!--                                Be Part-->
+<!--                                <br />-->
+<!--                                Of Our-->
+<!--                                <br />-->
+<!--                                Story!-->
+<!--                            </h4>-->
+<!--                        </div>-->
+<!--                    </li>-->
+                </ul>
+            </div>
+        </section>
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+<!--                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{% static 'blog/assets/img/team/me.jpg' %}" alt="..." />
+                            <h4>Diksha Bajaj</h4>
+                            <p class="text-muted">Lead Developer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/profile.php?id=100069925010732"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/dikshabajaj2808/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/diksha-bajaj-021394184/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{% static 'blog/assets/img/team/img.png' %}" alt="..." />
+                            <h4>Leo</h4>
+                            <p class="text-muted">Lead Entertainer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/l.e.o.thedog/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/dikshu2806/?ref=pages_you_manage"><i class="fab fa-facebook-f"></i></a>
+<!--                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>-->
+                        </div>
+                    </div>
+<!--                    <div class="col-lg-4">-->
+<!--                        <div class="team-member">-->
+<!--                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />-->
+<!--                            <h4>Larry Parker</h4>-->
+<!--                            <p class="text-muted">Lead Developer</p>-->
+<!--                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>-->
+<!--                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>-->
+<!--                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">I have just started with. To join with me email or DM on LinkedIn ;) </p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Clients-->
+<!--        <div class="py-5">-->
+<!--            <div class="container">-->
+<!--                <div class="row align-items-center">-->
+<!--                    <div class="col-md-3 col-sm-6 my-3">-->
+<!--                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." /></a>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-3 col-sm-6 my-3">-->
+<!--                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." /></a>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-3 col-sm-6 my-3">-->
+<!--                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{% static 'blog/assets/img/logos/facebook.svg' %}" alt="..." /></a>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-3 col-sm-6 my-3">-->
+<!--                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." /></a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contact Us</h2>
+<!--                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+                </div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- Name input-->
+                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email address input-->
+                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <!-- Phone number input-->
+                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <!-- Message input-->
+                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            To activate this form, sign up at
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <!-- Submit Button-->
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+                </form>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Read & Relax 2021</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+<!--                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>-->
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/dikshu2806/?ref=pages_you_manage"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/diksha-bajaj-021394184/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/dikshabajaj2808/"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.youtube.com/channel/UCKCwtNFRm4Baf3jYJjN4tEw"><i class="fab fa-youtube"></i></a>
+
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'blog/assets/img/close-icon.svg' %}"  alt="Close " /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Deep Breath</h2>
+                                    <p class="item-intro text-muted">It sends a message to your brain to calm down and relax.</p>
+<!--                                    <img class="img-fluid d-block mx-auto" src="{% static 'blog/assets/img/portfolio/breath1.jpg' %}" alt="..." />-->
+                                    <p>Breathing exercises can help you relax because they make your body feel like
+                                        it does when you are already relaxed. By taking deep breaths
+                                        your heart rate shows, more oxygen enters our bloodstream and ultimately
+                                        communicates with the brain to relax.
+                                        When you inhale, your heart rate speeds up. When you exhale, it slows down.
+                                        Breathing in for a count of four and out for a
+                                        count of eight for just a few minutes can start to calm your nervous system. </p>
+                                    <ul class="list-inline">
+                                        <li>
+<!--                                            <strong class="text-uppercase">Some Breathing Techniques:</strong>-->
+                                            <iframe width="420" height="345"
+                                                    src="https://www.youtube.com/embed/odADwWzHR24">
+                                            </iframe>
+                                        </li>
+                                        <li>
+                                            <strong class="text-uppercase">Some Breathing Techniques</strong>
+
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'blog/assets/img/close-icon.svg' %}"  alt="Close " /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Friends and Family</h2>
+                                    <p class="item-intro text-muted">Spend some time with your family</p>
+<!--                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />-->
+                                    <p> Friends & family are two important pillars of support, especially in difficult times.
+                                         Research suggests maintaining strong friendships can help you cope with
+                                        stress more effectively and help lower your chances of facing some types of stress in the first place.
+                                        Similarly when you and your family spend quality time together, you can prevent  stress
+                                        related health issues and avoid unhealthy stress coping mechanisms such as binge eating or smoking.
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li>
+                                           <iframe width="420" height="345"
+                                                    src="https://www.youtube.com/embed/3VRi6gWj98E">
+                                            </iframe>
+                                        </li>
+                                        <li>
+                                            <strong>Critical importance of friends and family</strong>
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'blog/assets/img/close-icon.svg' %}" alt="Close " /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Be Happy</h2>
+                                    <p class="item-intro text-muted">Happier people live longer. </p>
+<!--                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />-->
+                                    <p>
+                                        While you may not be able to control all of the factors that are causing stress in your life,
+                                        there are a few things you can do Just Chill ! Yes
+                                        sometimes you just need to chill and if you regularly make time for fun and relaxation,
+                                        you'll be in a better place to handle life's stressors. The act of laughing helps your body live happily. Also
+                                        research has shown that being happier may help keep your immune system strong .
+                                    </p>
+
+                                    <ul class="list-inline">
+                                        <li>
+                                            <iframe width="420" height="345"
+                                                    src="https://www.youtube.com/embed/UI66ZWBwTbM">
+                                            </iframe>
+                                        </li>
+                                        <li>
+                                            <strong>Secret of happiness</strong>
+
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'blog/assets/img/close-icon.svg' %}" alt="Close " /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Music</h2>
+                                    <p class="item-intro text-muted">Some research suggests that Music might even make you healthier</p>
+<!--                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />-->
+                                    <p>
+                                        Music has the ability to make us dance like no one is watching, sing until your
+                                        throat is sore and uncontrollably tap your feet.when you’re having a bad day,
+                                        there’s nothing better than playing an uplifting and joyous song as loud as you can.
+                                        Music’s ability to be a stress reliever should not be downplayed.
+                                        Whether playing in the background or you’re giving it your full attention,
+                                        certain genres of music have the innate ability to reduce stress.
+                                        Soft, ambient music provides calming stimulation for the mind. In this case,
+                                        best avoid loud rock or metal to moderate your stress.
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li>
+                                             <iframe width="420" height="345"
+                                                    src="https://www.youtube.com/embed/_eXdP7ojSkI">
+                                            </iframe>
+                                        </li>
+                                        <li>
+                                            <strong>Music and its power</strong>
+
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'blog/assets/img/close-icon.svg' %}" alt="Close " /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Sleep</h2>
+                                    <p class="item-intro text-muted"> Poor sleep itself can even turn into a source of stress.</p>
+<!--                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />-->
+                                    <p>
+                                        It’s no secret that sleep plays an important role in good physical and mental health.
+                                         A good night's sleep makes you able to tackle the day's stress more easily.
+                                        When you’re tired, you’re less patient and more easily agitated, which can increase
+                                        stress. Most adults need 7 to 9 hours of sleep each night. Practicing good sleep hygiene
+                                        along with stress-lowering tactics can help improve your quality of sleep.
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <iframe width="420" height="345"
+                                                    src="https://www.youtube.com/embed/Ld9RlIVN57M">
+                                            </iframe>
+
+                                        </li>
+                                        <li>
+                                            <strong>Quality Sleep</strong>
+
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'blog/assets/img/close-icon.svg' %}" alt="Close " /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Exploring Nature</h2>
+                                    <p class="item-intro text-muted">Being in nature, or even viewing scenes of nature, reduces anger, fear, and stress</p>
+<!--                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />-->
+                                    <p>
+                                        New research from an interdisciplinary Cornell team has found that as little as
+                                        10 minutes in a natural setting can help college students feel happier and lessen
+                                        the effects of both physical and mental stress.Spending time in nature is linked
+                                        to both cognitive benefits and improvements in mood, mental health and emotional
+                                        well-being.Feeling connected to nature can produce similar benefits to well-being,
+                                        regardless of how much time one spends outdoors.
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <iframe width="420" height="345"
+                                                    src="https://www.youtube.com/embed/jSgCo3bvaX0">
+<!--                                                https://youtu.be/jSgCo3bvaX0-->
+                                            </iframe>
+                                        </li>
+                                        <li>
+                                            <strong> Exlposure to nature </strong>
+
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        <!-- Portfolio item 7 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'blog/assets/img/close-icon.svg' %}"  alt="Close " /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Coffee</h2>
+                                    <p class="item-intro text-muted">It sends a message to your brain to calm down and relax.</p>
+<!--                                    <img class="img-fluid d-block mx-auto" src="{% static 'blog/assets/img/portfolio/breath1.jpg' %}" alt="..." />-->
+                                    <p>
+                                        Studies have shown that coffee consumption can reduce depression and suicide risk,
+                                        as well as relieve stress. Small to moderate amounts of caffeine can lift your mood and give you a boost.
+                                        However, high amounts of caffeine can lead to the negative health
+                                        effects associated with prolonged elevated levels of cortisol (as in chronic stress).<br>
+                                        <b>Some points to keep in mind</b>
+                                        <ul style="list-style-type:square">
+                                            <li>
+                                                Don’t take too much Caffeine
+                                            </li>
+                                            <li>
+                                                Avoid caffeine after 2 p.m.
+                                            </li>
+                                            <li>
+                                                Enjoy caffeine with physical activity
+                                            </li>
+
+                                        </ul>
+
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li>
+<!--                                            <strong class="text-uppercase">Some Breathing Techniques:</strong>-->
+                                            <iframe width="420" height="345"
+                                                    src="https://www.youtube.com/embed/QBK4SNSjnmY">
+<!--                                                https://youtu.be/QBK4SNSjnmY-->
+                                            </iframe>
+                                        </li>
+                                        <li>
+                                            <strong class="text-uppercase">Some Breathing Techniques</strong>
+
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 8 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'blog/assets/img/close-icon.svg' %}"  alt="Close " /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Exercise</h2>
+                                    <p class="item-intro text-muted">Spend some time on health improvement</p>
+<!--                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />-->
+                                    <p>
+                                        Exercise increases your overall health and your sense of well-being however it
+                                        also has some direct stress-busting benefits.
+                                        Regular exercise can increase self-confidence, improve your mood, help you relax.
+                                        Exercise can also improve your sleep, which is often disrupted by stress, depression and anxiety.
+                                        <b>Note</b> If you haven't exercised for some time or you have health concerns,
+                                        you may want to talk to your doctor before starting a new exercise routine.
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li>
+                                           <iframe width="420" height="345"
+                                                    src="https://www.youtube.com/embed/GNWaWJm1A1g">
+<!--                                               https://youtu.be/GNWaWJm1A1g-->
+                                            </iframe>
+                                        </li>
+                                        <li>
+                                            <strong>Exercise and its benefits</strong>
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 9 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'blog/assets/img/close-icon.svg' %}" alt="Close " /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Meditation</h2>
+                                    <p class="item-intro text-muted">A simple, fast way to reduce stress</p>
+<!--                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />-->
+                                    <p>
+                                        Meditation can reduce stress levels, which translates to less anxiety.
+                                        By learning to calm your body and mind, your physical and emotional stress
+                                        can melt away. This leaves you feeling better, refreshed, and ready to face
+                                        the challenges of your day with a healthy attitude. With regular practice over
+                                        weeks or months, you can experience even greater benefits.
+                                    </p>
+
+                                    <ul class="list-inline">
+                                        <li>
+                                            <iframe width="420" height="345"
+                                                    src="https://www.youtube.com/embed/Aw71zanwMnY">
+<!--                                                https://youtu.be/Aw71zanwMnY-->
+                                            </iframe>
+                                        </li>
+                                        <li>
+                                            <strong>Power of Meditation</strong>
+
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 10 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'blog/assets/img/close-icon.svg' %}" alt="Close " /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Gratitude</h2>
+                                    <p class="item-intro text-muted">Focus on what you have</p>
+<!--                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />-->
+                                    <p>
+                                        Expressing gratitude helps people feel more positive emotions, cherish
+                                        good experiences, and think more deeply about what they have rather than
+                                        what they lack. If someone in your life selflessly does something for you
+                                        and you want to express gratitude, common expressions of thanks might not seem like enough.
+                                        Gratitude helps people refocus on what they have instead of what they lack. And,
+                                        although it may feel contrived at first, this mental state grows stronger with use and practice.
+
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li>
+                                             <iframe width="420" height="345"
+                                                    src="https://www.youtube.com/embed/_vsRx8rLuRU">
+<!--                                                 https://youtu.be/_vsRx8rLuRU-->
+                                            </iframe>
+                                        </li>
+                                        <li>
+                                            <strong> Thankyou! </strong>
+
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 11 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'blog/assets/img/close-icon.svg' %}" alt="Close " /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Hobby</h2>
+                                    <p class="item-intro text-muted">Reading||Arts and Crafts||Yoga||Baking</p>
+<!--                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />-->
+                                    <p>
+                                        Hobbies aren’t just about fun and games, they range from discussing your latest
+                                        book to baking the perfect brioche. Regardless of your hobby, it can have great
+                                        benefits for your mind, body, social life and even your career.
+                                        Hobbies such as gardening, hiking, dancing, yoga, sports or fitness can keep
+                                        us active without the feeling of an obligatory trip to the gym.
+                                        Hobbies can also help you boost your career.
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <iframe width="420" height="345"
+                                                    src="https://www.youtube.com/embed/Kn5vNISGc2k">
+<!--                                                https://youtu.be/Kn5vNISGc2k-->
+                                            </iframe>
+
+                                        </li>
+                                        <li>
+                                            <strong>A lot more to explore</strong>
+
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 12 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'blog/assets/img/close-icon.svg' %}" alt="Close " /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Have A Laugh</h2>
+                                    <p class="item-intro text-muted">Improve your mood</p>
+<!--                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />-->
+                                    <p>
+                                    Laughter is well-known for its therapeutic effects, and many places now offer
+                                        laughter therapy or laughter yoga classes to those seeking to boost their
+                                        health and mood. Studies have in fact found that even the anticipation of
+                                        laughter can help us to relax by lifting our spirits and reducing stress
+                                        levels in the body. If you are serious about your relaxation, you could
+                                        consider attending a laughter class, but chilling out with a funny DVD, book
+                                        or friend is an equally great option to help you relax.
+<!--                                    Visualisation – imagine a relaxing place and focus on the details.Visualisation – imagine a relaxing place and focus on the details.-->
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <iframe width="420" height="345"
+                                                    src="https://www.youtube.com/embed/PppkNH3bKV4">
+<!--                                                https://youtu.be/jSgCo3bvaX0-->
+<!--                                                /PppkNH3bKV4-->
+                                            </iframe>
+                                        </li>
+                                        <li>
+                                            <strong> Exlposure to nature </strong>
+
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'blog/js/scripts.js' %}"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
